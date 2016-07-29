@@ -1,0 +1,431 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>飞扬研发实验室</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="js/jquery.min.js"></script>
+		 <!-- Custom Theme files -->
+		<link href="css/style.css" rel='stylesheet' type='text/css' />
+   		 <!-- Custom Theme files -->
+   		 <!-- start-smoth-scrolling-->
+		<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+		 <!-- start-smoth-scrolling-->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+		</script>
+		
+		<!--start-top-nav-script-->
+		<script>
+			$(function() {
+				var pull 		= $('#pull');
+					menu 		= $('nav ul');
+					menuHeight	= menu.height();
+				$(pull).on('click', function(e) {
+					e.preventDefault();
+					menu.slideToggle();
+				});
+				$(window).resize(function(){
+	        		var w = $(window).width();
+	        		if(w > 320 && menu.is(':hidden')) {
+	        			menu.removeAttr('style');
+	        		}
+	    		});
+			});
+		</script>
+		<!--//End-top-nav-script-->
+	</head>
+	<body>
+		<!--- start-header-->
+			<div id="home" class="header">
+					<div class="top-header">
+						<div class="container">
+						<div class="logo">
+							<a href="http://lab.fyscu.com">飞扬研发实验室</a>
+						</div>
+						<!--start-top-nav-->
+						 <nav class="top-nav">
+							<ul class="top-nav">
+								<li class="active"><a href="#home" class="scroll">首页 </a></li>
+								<li><a target="_blank" href="http://log.fyscu.com">博客 </a></li>
+								<li class="page-scroll"><a href="#work" class="scroll">项目</a></li>
+								<li class="page-scroll"><a href="#team" class="scroll">团队</a></li>
+								<li class="contatct-active" class="page-scroll"><a href="#contact" class="scroll">联系我们</a></li>
+							</ul>
+							<a href="#" id="pull"><img src="images/nav-icon.png" title="menu" /></a>
+						</nav>
+						<div class="clearfix"> </div>
+					</div>
+				</div>
+			</div>
+			<!--- //End-header-->
+<!---work-->
+<!-- 			<div id="work" class="work">
+				<div id="work1" class="container">
+					<div class="head-one text-center">
+						<h2>什么都准备好了，就差一个程序员了</h2>
+						<span> </span>
+						<p>飞扬研发实验室2015年度招新</p>
+					</div>
+					
+					<script src="js/jquery.hoverGrid.js"></script>
+					<link rel="stylesheet" type="text/css" href="css/jquery.hoverGrid.css">
+					<script type="text/javascript">
+					    $(document).ready(function() {
+					      $('#jobs').hoverGrid();
+					    });
+					</script>
+										<div class="works">
+							<div id="jobs">
+								<div class="col-md-12 work-grid">
+								    <div class="item" style="height:319px">
+								    <a target="_blank" href="http://2015.fyscu.com">
+								        <img  src="images/banner.png" title="name" />
+								        <div class="caption" style="display: none;">
+								            <h2>点击进入</h2>
+								            <p>研发实验室2014年度代码报告及2015招新在线报名</p>
+								        </div>
+								         </a>
+								    </div>  
+								   
+							    </div>  
+							  							  
+							    <div class="clearfix"> </div>               
+							</div>
+					</div>
+					 <div class="clearfix"> </div>   
+					</div>
+				</div> -->
+					<!--//works-->
+			<!---work-->
+			<div id="work" class="work">
+				<div id="work1" class="container">
+					<div class="head-one text-center">
+						<h2>我们在做的东西</h2>
+						<span> </span>
+						<p>这些东西有些已经上线了,有些还没有上线..</p>
+					</div>
+					<!--works-->
+					<!--images-hover-effects-->
+					<script src="js/jquery.hoverGrid.js"></script>
+					<link rel="stylesheet" type="text/css" href="css/jquery.hoverGrid.css">
+					<script type="text/javascript">
+					    $(document).ready(function() {
+					      $('#whatever').hoverGrid();
+					    });
+					</script>
+					<!--images-hover-effects-->
+					<div class="works">
+							<div id="whatever">
+								<div class="col-md-4 work-grid">
+								
+								    <div class="item">
+								    <a target="_blank" href="http://fyscu.com">
+								        <img  src="images/fyscu.png" title="name" />
+								        <div class="caption" style="display: none;">
+								            <h2>飞扬官网</h2>
+								            <p>完全自适应的html5</p>
+								        </div>
+								         </a>
+								    </div>  
+								   
+							    </div>  
+							    <div class="col-md-4 work-grid">
+								    <div class="item">
+								     <a target="_blank" href="http://r.fyscu.com">
+								        <img  src="images/repair.png" title="name" />
+								        <div class="caption" style="display: none;">
+								            <h2>飞扬电脑报修系统</h2>
+								            <p>用户可在微信一键报修</p>
+								        </div>
+								        </a>
+								    </div>  
+							    </div>    
+							    <div class="col-md-4 work-grid">
+								    <div class="item">
+
+								     <a target="_blank" href="http://open.fyscu.com">
+								        <img  src="images/api.png" title="name" />
+								        <div class="caption" style="display: none;">
+								            <h2>飞扬开放平台</h2>
+								            <p>飞扬的API</p>
+								        </div>
+								        </a>
+								    </div>  
+							    </div>   
+							    <div class="col-md-4 work-grid">
+								    <div class="item">
+
+								     <a target="_blank" href="http://gpa.fyscu.com">
+								        <img  src="images/w10.png" title="name" />
+								        <div class="caption" style="display: none;">
+								            <h2>川大绩点一键计算</h2>
+								            <p>在线计算每个学期的绩点/加权平均分以及自定义计算</p>
+								        </div>
+								        </a>
+								    </div>  
+							    </div>    
+							  
+							    <div class="clearfix"> </div>               
+							</div>
+					</div>
+					 <div class="clearfix"> </div>   
+					</div>
+				</div>
+					<!--//works-->
+					<!--team-->
+					<div id="team" class="team">
+						<div class="container">
+							<div class="head-one text-center team-head">
+								<h2>我们的团队·研发2.0</h2>
+								<span> </span>
+								<p>大多数人还没有男朋友/女朋友</p>
+							</div>	
+							<!----team-members---->
+							<div class="team-members">
+								<div class="col-md-3">
+									<div class="team-member text-center">
+										<img class="t-pic" src="images/lanhao.jpg" title="name" />
+										<h3>蓝浩</h3>
+										<span>呵呵。「php·node·Angular」</span>
+										<ul class="t-social unstyled-list list-inline">
+											<li><a class="weibo" target="_blank" href="http://weibo.com/lanhaosongzi"><span> </span></a></li>
+											<li><a class="dribbble" href="http://lanhao.name"><span> </span></a></li>
+										
+											<div class="clearfix"> </div>
+										</ul>
+									</div>
+								</div>
+								<div class="col-md-3">
+									<div class="team-member text-center">
+										<img class="t-pic" src="images/shuige.jpg" title="name" />
+										<h3>石垚</h3>
+										<span>优雅编程，简单生活。俗称“水哥”！「JavaScript·jQuery
+										·PHP·Linux Deepin·MiUI」</span>
+										<ul class="t-social unstyled-list list-inline">
+											<li><a class="weibo" target="_blank" href="http://weibo.com/u/3888290503"><span> </span></a></li>
+											<li><a class="dribbble" href="http://wiki.fyscu.com/User:test_32"><span> </span></a></li>
+										
+											<div class="clearfix"> </div>
+										</ul>
+									</div>
+								</div>
+								<div class="col-md-3">
+									<div class="team-member text-center">
+										<img class="t-pic" src="images/yangguobao.jpg" title="name" />
+										<h3>杨国宝</h3>
+										<span>最帅不解释。「php·node·html」</span>
+										<ul class="t-social unstyled-list list-inline">
+											<li><a class="weibo" target="_blank" href="http://weibo.com/tpydsw"><span> </span></a></li>
+											<li><a class="dribbble" href="http://www.yangguobao.cn"><span> </span></a></li>
+										
+											<div class="clearfix"> </div>
+										</ul>
+									</div>
+								</div>
+								<div class="col-md-3">
+									<div class="team-member text-center">
+										<img class="t-pic" src="images/chenning.jpg" title="name" />
+										<h3>陈宁</h3>
+										<span>自己织毛衣「php」</span>
+										<ul class="t-social unstyled-list list-inline">
+											<li><a class="weibo" target="_blank" href="#"><span> </span></a></li>
+											<li><a class="dribbble" href="#"><span> </span></a></li>
+										
+											<div class="clearfix"> </div>
+										</ul>
+									</div>
+								</div>
+								<div class="clearfix"> </div>
+								<div class="col-md-3">
+									<div class="team-member text-center">
+										<img class="t-pic" src="images/chenxiaoyuan.png" title="name" />
+										<h3>陈小源「php·c」</h3>
+										<span>Smile your smile, Dream your dream</span>
+										<ul class="t-social unstyled-list list-inline">
+											<li><a class="weibo" target="_blank" href=""><span> </span></a></li>
+											<li><a class="dribbble" href=""><span> </span></a></li>
+										
+											<div class="clearfix"> </div>
+										</ul>
+									</div>
+								</div>
+								
+								<div class="col-md-3">
+									<div class="team-member text-center">
+										<img class="t-pic" src="images/jianghang.jpg" title="name" />
+										<h3>蒋航</h3>
+										<span>冷暖自知。「php·html
+										·operations」</span>
+										<ul class="t-social unstyled-list list-inline">
+											<li><a class="weibo" target="_blank" href="http://weibo.com/u/3276351360"><span> </span></a></li>
+											<li><a class="dribbble" href="http://jianghang.name"><span> </span></a></li>
+										
+											<div class="clearfix"> </div>
+										</ul>
+									</div>
+								</div>
+										<div class="col-md-3">
+									<div class="team-member text-center">
+										<img class="t-pic" src="images/baiqi.jpg" title="name" />
+										<h3>白琦</h3>
+										<span>先帝创业未半，而花光预算。「php·c」</span>
+										<ul class="t-social unstyled-list list-inline">
+											<li><a class="weibo" target="_blank" href="http://weibo.com/u/3245033963"><span> </span></a></li>
+											<li><a class="dribbble" href="http://baiqi.name"><span> </span></a></li>
+										
+											<div class="clearfix"> </div>
+										</ul>
+									</div>
+								</div>
+										<div class="col-md-3">
+									<div class="team-member text-center">
+										<img class="t-pic" src="images/taoyu.jpg" title="name" />
+										<h3>陶钰</h3>
+										<span>I am writimg for my only sunshine「html」</span>
+										<ul class="t-social unstyled-list list-inline">
+											<li><a class="weibo" target="_blank" href=""><span> </span></a></li>
+											<li><a class="dribbble" href=""><span> </span></a></li>
+										
+											<div class="clearfix"> </div>
+										</ul>
+									</div>
+								</div>
+									<div class="clearfix"> </div>
+										<div class="col-md-3">
+									<div class="team-member text-center">
+										<img class="t-pic" src="images/cuiqian.jpg" title="name" />
+										<h3>崔倩</h3>
+										<span>注孤生 我只看不说话「html·css·js」</span>
+										<ul class="t-social unstyled-list list-inline">
+											<li><a class="weibo" target="_blank" href="http://weibo.com/ryde"><span> </span></a></li>
+											<li><a class="dribbble" href=""><span> </span></a></li>
+										
+											<div class="clearfix"> </div>
+										</ul>
+									</div>
+								</div>
+							
+										<div class="col-md-3">
+									<div class="team-member text-center">
+										<img class="t-pic" src="images/huwenjia.jpg" title="name" />
+										<h3>胡文佳</h3>
+										<span>请叫我手机杀手「html·js·css·ps」</span>
+										<ul class="t-social unstyled-list list-inline">
+											<li><a class="weibo" target="_blank" href="http://weibo.com/tuanzio0"><span> </span></a></li>
+											<li><a class="dribbble" href=""><span> </span></a></li>
+										
+											<div class="clearfix"> </div>
+										</ul>
+									</div>
+								</div>
+										<div class="col-md-3">
+									<div class="team-member text-center">
+										<img class="t-pic" src="images/jiangyanbin.jpg" title="name" />
+										<h3>蒋言斌</h3>
+										<span>I see no ending「c++·py」</span>
+										<ul class="t-social unstyled-list list-inline">
+											<li><a class="weibo" target="_blank" href=""><span> </span></a></li>
+											<li><a class="dribbble" href=""><span> </span></a></li>
+										
+											<div class="clearfix"> </div>
+										</ul>
+									</div>
+								</div>
+										<div class="col-md-3">
+									<div class="team-member text-center">
+										<img class="t-pic" src="images/wuleicheng.jpg" title="name" />
+										<h3>吴磊城</h3>
+										<span>单身狗「c·c++·c#」</span>
+										<ul class="t-social unstyled-list list-inline">
+											<li><a class="weibo" target="_blank" href=""><span> </span></a></li>
+											<li><a class="dribbble" href=""><span> </span></a></li>
+										
+											<div class="clearfix"> </div>
+										</ul>
+									</div>
+								</div>
+									<div class="clearfix"> </div>
+										<div class="col-md-3">
+									<div class="team-member text-center">
+										<img class="t-pic" src="images/zoubing.jpg" title="name" />
+										<h3>邹兵</h3>
+										<span>艺术一草「java」</span>
+										<ul class="t-social unstyled-list list-inline">
+											<li><a class="weibo" target="_blank" href=""><span> </span></a></li>
+											<li><a class="dribbble" href=""><span> </span></a></li>
+										
+											<div class="clearfix"> </div>
+										</ul>
+									</div>
+								</div>
+							
+							</div>
+							<!--//team-members-->
+						</div>
+					</div>
+					<!--//team-->
+					<!--Contact-->
+					<div id="contact" class="contact">
+						<div class="container">
+							<div class="head-one text-center">
+								<h2>联系我们</h2>
+								<span> </span>
+							</div>
+							<div class="contact-grids">
+								
+								<div class="col-md-7 contact-form">
+								<p>请私信官方微博:<a target="_blank" href="http://weibo.com/u/5290118393">@飞扬研发</a></p>	
+								
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+						</div>
+					</div>
+					<!--//Contact-->
+					<!--footer-->
+					<div class="footer">
+						<div class="container">
+							<div class="footer-left">
+								<p><span>地址:</span> 四川省成都市双流县四川大学江安校区(有可能搬到江安花园哈哈)</p>
+							</div>
+							<div class="footer-right">
+								<p> <a href="http://fyscu.com">飞扬官网</a></p>
+								<script type="text/javascript">
+									$(document).ready(function() {
+										/*
+										var defaults = {
+								  			containerID: 'toTop', // fading element id
+											containerHoverID: 'toTopHover', // fading element hover id
+											scrollSpeed: 1200,
+											easingType: 'linear' 
+								 		};
+										*/
+										
+										$().UItoTop({ easingType: 'easeOutQuart' });
+										
+									});
+								</script>
+									<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+					</div>
+					<!--//footer-->
+				</div>
+			</div>
+			
+	</body>
+</html>
+
